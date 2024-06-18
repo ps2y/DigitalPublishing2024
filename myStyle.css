@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+KR:wght@200..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+}
+
+#fixedBg{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/menu00.jpg');
+    background-size: cover;
+
+}
+
+#container{
+    width: 1420px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+#menuBar {
+    position: fixed;
+    top: 0px;
+    background-color: gray;
+    display: flex;
+    width: 1420px;
+    justify-content: center;
+    height: 50px;
+    background-image: url('img/menu bar.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1000;
+}
+
+#menuList {
+    display: flex;
+    list-style: none;
+    width: 800px;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuList a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menuList a.active {
+    color: rgb(101, 54, 54);
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#item01 {
+    background-image: url('img/menu01.png');
+}
+    
+
+#item02 {
+    background-image: url('img/menu02.png');
+}
+    
+
+#item03 {
+    background-image: url('img/menu03.png');
+}
+
+#item04 {
+    background-image: url('img/menu04.png');
+}
+
+#item05 {
+    background-image: url('img/menu05.png');
+}

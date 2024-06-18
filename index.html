@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/fav.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍범도 장군, 그는 공산주의자인가</title>
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="scrollAni.js" defer></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div id="fixedBg"></div>
+    <div id="container">
+        <nav id="menuBar">
+            <ul id="menuList"> 
+                <li><a href="#item01" class="menu-link">의문</a></li>
+                <li><a href="#item02" class="menu-link">낙인</a></li>
+                <li><a href="#item03" class="menu-link">생애</a></li>
+                <li><a href="#item04" class="menu-link">진실</a></li>
+                <li><a href="#item05" class="menu-link">기억</a></li>
+            </ul>
+        </nav>
+
+        <section id="item01">
+            <div class="content">
+                <p></p>
+            </div>
+        </section>
+
+        <section id="item02">
+            <div class="content">
+                <p></p>
+            </div>
+        </section>
+
+        <section id="item03">
+            <div class="content">
+                <p></p>
+            </div>
+        </section>
+
+        <section id="item04">
+            <div class="content">
+                <p></p>
+            </div>
+        </section>
+
+        <section id="item05">
+            <div class="content">
+                <p></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.menu-link');
+
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    links.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
